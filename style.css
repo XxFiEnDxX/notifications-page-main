@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: hsl(210, 60%, 98%);
+    
+    min-height: 100vh;
+
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.container{
+    box-shadow: hsl(205, 33%, 90%) 0px 7px 29px 0px;
+    background-color: hsl(0, 0%, 100%);
+
+    border-radius: 10px;
+
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 0.5rem 1.8rem;
+}
+
+.card{
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    justify-content: center;
+    align-items: center;
+
+    /* grid-row-gap: 0.2em; */
+}
+
+.card .heading{
+    font-weight: 800;
+    font-size: 16px;
+    color: hsl(224, 21%, 14%);
+
+    margin: 0.7rem 0rem;
+    
+    justify-self: start;
+    
+}
+
+.card .heading span{
+    font-size: 11px;
+
+    padding: 0.1em 0.6em;
+
+    border-radius: 3px;
+
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+}
+
+.card .markAll{
+    font-size: 12px;
+    color: hsl(219, 12%, 42%);
+    /* font-weight: 500; */
+    
+    justify-self: end;
+}
+
+.active{
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    background-color: hsl(210, 60%, 98%);
+}
+
+.notify{
+    /* height: 3em; */
+    border-radius: 10px;
+
+    margin-top: 0.4rem;
+    padding: 0.6rem;
+    
+    grid-column: 1/-1;
+    display: grid;
+
+    grid-template-columns: 2.3rem auto auto;
+    grid-template-rows: auto auto;
+
+    grid-column-gap: 0.6rem;
+    grid-row-gap: 0.3rem;
+    /* grid-auto-rows: minmax(2rem 1rem); */
+    /* grid-auto-rows: 10px; */
+
+    /* justify-items: center; */
+    /* align-items: center; */
+
+    /* justify-content: start; */
+    /* justify-items: center; */
+}
+
+.notify img{
+    display: inline;
+    align-self: center;
+    justify-self: center;
+
+    width: 2.3em;
+
+    grid-row: 1/-1;
+    align-self: self-start;
+}
+
+.message{
+    font-size: 12px;
+    color: hsl(219, 14%, 63%);
+    color: hsl(219, 12%, 42%);
+
+    grid-column:2/-1 ;
+}
+
+.message .name{
+    font-size: 12.2;
+    font-weight: 800;
+    color: hsl(224, 21%, 14%);
+}
+
+.message .activity{
+    font-size: 12.2;
+    font-weight: 800;
+    color: hsl(219, 12%, 42%);
+}
+.message .red-ball{
+    display: inline-block;
+    margin-left: 0.25rem;
+    font-size: 0.7rem;
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50% ;
+
+    height: 0.35rem;
+    width: 0.35rem;
+}
+.time{
+    margin: 0;
+    font-size: 12px;
+    color: hsl(205, 33%, 90%);
+    color: hsl(219, 14%, 63%);
+
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+}
+
+.chat{
+    grid-column: 2/-1;
+    border: 1.3px solid hsl(205, 33%, 90%);
+    border-radius: 3px;
+    color: hsl(219, 12%, 42%);
+    font-size: 12px;
+    padding: 0.7rem;
+}
+
+.post:hover{
+    /* border: 2px solid hsl(211, 68%, 94%); */
+    box-shadow: hsl(211, 68%, 94%) 0px 1px 10px;
+    border-radius: 5px;
+}
+
+.chat:hover{
+    background-color: hsl(211, 68%, 94%);
+}
+
+.hover:hover{
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+/* 
+- White: hsl(0, 0%, 100%)
+- Very light grayish blue: hsl(210, 60%, 98%)
+- Light grayish 1: hsl(211, 68%, 94%)
+- Light grayish 2: hsl(205, 33%, 90%)
+- Grayish blue: hsl(219, 14%, 63%)
+- Dark grayish blue: hsl(219, 12%, 42%)
+- Very dark blue: hsl(224, 21%, 14%) */
